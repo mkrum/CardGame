@@ -6,7 +6,7 @@ class Player:
     def __init__(self, name, n_cards, n_players):
         self.name = name
         self.n_cards = n_cards
-        self.unknown_cards = range(1, n_cards + 1)
+        self.unknown_cards = list(range(1, n_cards + 1))
         self.n_players = n_players
         self.positions = {}
 

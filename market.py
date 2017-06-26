@@ -1,6 +1,6 @@
 import utils as ut
 from agent import Player
-import Queue as Q
+import queue as Q
 
 class MatchingEngine(object):
 
@@ -59,7 +59,7 @@ class CardMarket(object):
     def __init__(self, players, n_cards):
         self.players = players
         self.n_cards = n_cards
-        self.cards = range(1, n_cards + 1)
+        self.cards = list(range(1, n_cards + 1))
         self.data = [[] for _ in range(len(self.players)) ]
         self.draw()
         self.match = MatchingEngine()
